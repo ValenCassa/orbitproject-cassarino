@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="articles.css">
+  <link rel="stylesheet" href="../main.css">
+  <title>Orbit | Articles</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+</head>
+<body>
+
+  <div class="percent">
+    <div class="fill"></div>
+    <div class="counter"><h1 class="counter__scroll"></h1></div>
+  </div>
+
+  <header id="navbar">
+    
+    <div class="nav-ab">
+      <div class="menu-flex">
+        <div class="menu-open">
+          <div class="menu-open__toggle">
+            <svg width="51" height="23" viewBox="0 0 51 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="51" y1="1.5" x2="11" y2="1.5" stroke="black" stroke-width="3"/>
+              <line x1="51" y1="21.5" x2="11" y2="21.5" stroke="black" stroke-width="3"/>
+              <line x1="40" y1="11.5" x2="-7.96172e-08" y2="11.5" stroke="black" stroke-width="3"/>
+              </svg>   
+          </div>
+         
+        </div>
+        <div class="menu-text">
+          <p class="menu-word">MENU</p>
+        </div>
+      </div>
+  
+      <div class="logo">
+  
+        <div class="logo-container">
+          <svg width="61" height="52" viewBox="0 0 61 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M49.4599 29.3932C48.5503 35.2989 45.4703 40.653 40.8223 44.4082C36.1743 48.1634 30.2927 50.0497 24.3276 49.6981C18.3626 49.3465 12.7432 46.7824 8.56849 42.5072C4.39379 38.232 1.96404 32.5533 1.75443 26.5816C1.54482 20.6098 3.57043 14.7747 7.4351 10.2173C11.2998 5.65994 16.7255 2.70814 22.6512 1.93921C28.577 1.17027 34.5764 2.63951 39.4763 6.05958C44.3761 9.47964 47.8239 14.6045 49.1454 20.432L46.5155 21.0284C45.3425 15.8557 42.2821 11.3067 37.9328 8.27088C33.5835 5.2351 28.2582 3.93095 22.9983 4.61348C17.7384 5.29602 12.9223 7.91615 9.49185 11.9614C6.06142 16.0067 4.26341 21.1862 4.44947 26.487C4.63553 31.7877 6.79227 36.8284 10.4979 40.6232C14.2035 44.418 19.1915 46.694 24.4863 47.0061C29.7811 47.3181 35.0019 45.6438 39.1276 42.3105C43.2533 38.9773 45.9872 34.2248 46.7947 28.9827L49.4599 29.3932Z" fill="#FFD69C"/>
+            <path d="M7.92402 31.4666C7.17143 28.9932 6.9352 26.3916 7.22999 23.8231C7.52477 21.2546 8.34429 18.7742 9.63767 16.5356C10.9311 14.2971 12.6707 12.3482 14.7487 10.81C16.8266 9.2718 19.1985 8.17707 21.7172 7.59376L22.1955 9.65906C19.9598 10.1768 17.8544 11.1485 16.01 12.5139C14.1655 13.8793 12.6213 15.6092 11.4733 17.5962C10.3252 19.5832 9.59778 21.785 9.33612 24.0648C9.07446 26.3447 9.28415 28.654 9.95217 30.8495L7.92402 31.4666Z" fill="#FDD69B"/>
+            <path d="M27.971 25.108C28.313 24.5507 28.7563 24.1137 29.301 23.797C29.8583 23.4803 30.4917 23.322 31.201 23.322V26.115H30.498C29.662 26.115 29.0287 26.3113 28.598 26.704C28.18 27.0967 27.971 27.7807 27.971 28.756V34H25.311V23.474H27.971V25.108ZM35.6526 25.013C35.9946 24.5063 36.4633 24.0947 37.0586 23.778C37.6666 23.4613 38.357 23.303 39.1296 23.303C40.029 23.303 40.8396 23.5247 41.5616 23.968C42.2963 24.4113 42.8726 25.0447 43.2906 25.868C43.7213 26.6787 43.9366 27.6223 43.9366 28.699C43.9366 29.7757 43.7213 30.732 43.2906 31.568C42.8726 32.3913 42.2963 33.031 41.5616 33.487C40.8396 33.943 40.029 34.171 39.1296 34.171C38.3443 34.171 37.654 34.019 37.0586 33.715C36.476 33.3983 36.0073 32.993 35.6526 32.499V34H32.9926V19.94H35.6526V25.013ZM41.2196 28.699C41.2196 28.0657 41.0866 27.521 40.8206 27.065C40.5673 26.5963 40.2253 26.2417 39.7946 26.001C39.3766 25.7603 38.9206 25.64 38.4266 25.64C37.9453 25.64 37.4893 25.7667 37.0586 26.02C36.6406 26.2607 36.2986 26.6153 36.0326 27.084C35.7793 27.5527 35.6526 28.1037 35.6526 28.737C35.6526 29.3703 35.7793 29.9213 36.0326 30.39C36.2986 30.8587 36.6406 31.2197 37.0586 31.473C37.4893 31.7137 37.9453 31.834 38.4266 31.834C38.9206 31.834 39.3766 31.7073 39.7946 31.454C40.2253 31.2007 40.5673 30.8397 40.8206 30.371C41.0866 29.9023 41.2196 29.345 41.2196 28.699ZM56.5963 25.659V30.751C56.5963 31.1057 56.6786 31.3653 56.8433 31.53C57.0206 31.682 57.3119 31.758 57.7173 31.758H58.9523V34H57.2803C55.0383 34 53.9173 32.9107 53.9173 30.732V25.659H52.6633V23.474H53.9173V20.871H56.5963V23.474H58.9523V25.659H56.5963Z" fill="white"/>
+            <circle cx="48.7393" cy="24.7397" r="2" fill="white"/>
+            </svg>
+        </div>
+  
+          
+      </div>
+    </div>
+
+  </header>
+
+  <div class="nav-container">
+    <div class="menu-close">close</div>
+    <div class="socialsxd">
+      <span>facebook</span>
+      <span>instagram</span>
+    </div>
+    <nav class="menu">
+      <div class="menu__item">
+        <a href="../index.html#home" class="menu__item-link">Home</a>
+        <img class="menu__item-img" src="../img/city1.png" />
+        <div class="marquee">
+          <div class="marquee__inner">
+            <span>Home - Home - Home - Home - Home - Home - Home</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu__item">
+        <a href="../index.html#cities" class="menu__item-link">Popular cities</a>
+        <img class="menu__item-img" src="../img/city2.png" />
+        <div class="marquee">
+          <div class="marquee__inner">
+            <span
+              >Popular cities - Popular cities - Popular cities - Popular cities - Popular cities - Popular cities
+              - Popular cities</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="menu__item">
+        <a href="../index.html#about-us" class="menu__item-link">About us</a>
+        <img class="menu__item-img" src="../img/city3.png" />
+        <div class="marquee">
+          <div class="marquee__inner">
+            <span>About us - About us - About us - About us - About us - About us - About us</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu__item">
+        <a href="../index.html#contact" class="menu__item-link">Contact</a>
+        <img class="menu__item-img" src="../img/city4.png" />
+        <div class="marquee">
+          <div class="marquee__inner">
+            <span
+              >Contact - Contact - Contact - Contact - Contact - Contact -
+              Contact</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <a href="../index.html">
+      <button class="back"><svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.33333 2.08333L2.25 9.16667L9.33333 16.25" stroke="#EFCA94" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2.25 9.16666H13.5833C21.4076 9.16666 27.75 15.5091 27.75 23.3333V24.75" stroke="#EFCA94" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        </button>
+    </a>
+
+
+    <section class="article" id="#articleny">
+      <div class="art-title">
+        <div class="line-container">
+          <div class="line-container__line"></div>
+        </div>
+        
+        <h2 class="city-name">Visit New York!</h2>
+        <div class="vector-4"><svg width="174" height="15" viewBox="0 0 174 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 13V13C51.5784 2.39413 103.468 -0.514346 154.915 4.37292L173 6.09091" stroke="#EFCA94" stroke-width="4"/>
+          </svg>
+          </div>
+      </div>
+
+      <div class="img-art">
+        <img src="./img-art/img-ny-1.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="article-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique nam facilisis neque varius nibh eu commodo, non odio. Curabitur ut massa ut imperdiet at quisque facilisis. Sed duis ornare dis libero augue imperdiet nibh. Neque, fusce enim <span class="highlight">feugiat</span> imperdiet rutrum egestas eleifend eget. Purus, tellus mauris semper erat. Lorem in laoreet feugiat nec amet, id morbi. Dignissim vitae elementum risus bibendum. Gravida eu cursus cursus cras quis velit pellentesque nisi, risus. In sed amet lobortis et mus sed. Est purus aliquam amet est maecenas tincidunt faucibus. Nunc, aliquam, sed morbi cursus elit. Scelerisque justo libero id aliquam nulla massa fringilla et. Sit tortor adipiscing diam velit neque. Montes, id volutpat purus gravida tortor, <span class="highlight">ullamcorper sed mauris phasellus.</span><br><span class="img-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu vitae amet, viverra donec viverra scelerisque. Fusce sed dictum nam cursus eu. Id id enim facilisis quam. Mi augue sagittis ultrices enim amet lorem erat nunc tellus. In tincidunt tempus sed in mi. Mi, adipiscing faucibus id laoreet enim sed. <span class="highlight">Purus purus ac morbi aliquam quis cursus at at.</span>  Semper et arcu consequat curabitur id nullam. Nunc, nulla scelerisque semper aliquam purus morbi. Urna velit tincidunt mauris molestie ullamcorper nunc. Pharetra dolor, justo quam nisl, pellentesque auctor. Interdum eu pellentesque dui in neque ac lectus vulputate. Morbi fermentum vitae arcu, at vitae luctus metus vel ultricies. Malesuada rhoncus aliquet quam pulvinar scelerisque tempor magna vitae in. <span class="highlight">Risus, non egestas feugiat quisque netus nisi, cras.</span>  Nisi, nisi, sit nibh ipsum. Ornare amet dui placerat pretium pellentesque mattis posuere varius congue. Dui pulvinar consequat fames leo tempor ornare. Vitae et ut orci adipiscing lectus. Diam et rutrum massa ut condimentum scelerisque augue. Sagittis, euismod tempus, commodo nibh.</span></p>
+      </div>
+
+
+      <div class="img-art-2">
+        <img src="./img-art/img-ny-2.png" alt="">
+      </div>
+
+    </section>
+
+    <section class="article" id="articlesf">
+      <div class="art-title">
+        <div class="line-container">
+          <div class="line-container__line"></div>
+        </div>
+        
+        <h2 class="city-name">Visit New York!</h2>
+        <div class="vector-4"><svg width="174" height="15" viewBox="0 0 174 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 13V13C51.5784 2.39413 103.468 -0.514346 154.915 4.37292L173 6.09091" stroke="#EFCA94" stroke-width="4"/>
+          </svg>
+          </div>
+      </div>
+
+      <div class="img-art">
+        <img src="./img-art/img-ny-1.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="article-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique nam facilisis neque varius nibh eu commodo, non odio. Curabitur ut massa ut imperdiet at quisque facilisis. Sed duis ornare dis libero augue imperdiet nibh. Neque, fusce enim <span class="highlight">feugiat</span> imperdiet rutrum egestas eleifend eget. Purus, tellus mauris semper erat. Lorem in laoreet feugiat nec amet, id morbi. Dignissim vitae elementum risus bibendum. Gravida eu cursus cursus cras quis velit pellentesque nisi, risus. In sed amet lobortis et mus sed. Est purus aliquam amet est maecenas tincidunt faucibus. Nunc, aliquam, sed morbi cursus elit. Scelerisque justo libero id aliquam nulla massa fringilla et. Sit tortor adipiscing diam velit neque. Montes, id volutpat purus gravida tortor, <span class="highlight">ullamcorper sed mauris phasellus.</span><br><span class="img-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu vitae amet, viverra donec viverra scelerisque. Fusce sed dictum nam cursus eu. Id id enim facilisis quam. Mi augue sagittis ultrices enim amet lorem erat nunc tellus. In tincidunt tempus sed in mi. Mi, adipiscing faucibus id laoreet enim sed. <span class="highlight">Purus purus ac morbi aliquam quis cursus at at.</span>  Semper et arcu consequat curabitur id nullam. Nunc, nulla scelerisque semper aliquam purus morbi. Urna velit tincidunt mauris molestie ullamcorper nunc. Pharetra dolor, justo quam nisl, pellentesque auctor. Interdum eu pellentesque dui in neque ac lectus vulputate. Morbi fermentum vitae arcu, at vitae luctus metus vel ultricies. Malesuada rhoncus aliquet quam pulvinar scelerisque tempor magna vitae in. <span class="highlight">Risus, non egestas feugiat quisque netus nisi, cras.</span>  Nisi, nisi, sit nibh ipsum. Ornare amet dui placerat pretium pellentesque mattis posuere varius congue. Dui pulvinar consequat fames leo tempor ornare. Vitae et ut orci adipiscing lectus. Diam et rutrum massa ut condimentum scelerisque augue. Sagittis, euismod tempus, commodo nibh.</span></p>
+      </div>
+
+
+      <div class="img-art-2">
+        <img src="./img-art/img-ny-2.png" alt="">
+      </div>
+
+    </section>
+  </main>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+    
+    var counter = document.querySelector(".percent");
+
+    function progress() {
+        var windowScrollTop = $(window).scrollTop();
+        var docHeight = $(document).height();
+        var windowHeight = $(window).height();
+        var progress = (windowScrollTop / (docHeight - windowHeight)) * 100;
+
+        var $bgColor = progress > 99 ? "#fff" : "#fff";
+        var $textColor = progress > 99 ? "#fff" : "#333";
+
+        $(".counter__scroll")
+            .text(Math.round(progress) + "%")
+            .css({ color: $textColor });
+
+        $(".fill")
+            .height(progress + "%")
+            .css({ backgroundColor: $bgColor });
+    }
+    progress();
+    $(document).on("scroll", progress);
+</script>
+
+  <script>
+    var t1 = new TimelineMax({ paused: true });
+
+    t1.to(".nav-container", 1, {
+      left: 0,
+      ease: Expo.easeInOut,
+    });
+
+    t1.staggerFrom(
+      ".menu > div",
+      0.8,
+      { y: 100, opacity: 0, ease: Expo.easeOut },
+      "0.1",
+      "-=0.4"
+    );
+
+    t1.staggerFrom(
+      ".socialsxd",
+      0.8,
+      { y: 100, opacity: 0, ease: Expo.easeOut },
+      "0.4",
+      "-=0.6"
+    );
+
+    t1.reverse();
+    $(document).on("click", ".menu-open", function () {
+      t1.reversed(!t1.reversed());
+    });
+    $(document).on("click", ".menu-close", function () {
+      t1.reversed(!t1.reversed());
+    });
+    $(document).on("click", ".menu__item-link", function () {
+      t1.reversed(!t1.reversed());
+    });
+</script>
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-200px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+</body>
+</html>

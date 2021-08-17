@@ -1,0 +1,65 @@
+@import '../components/articulo';
+@import '../components/scroll';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+  text-rendering: optimizeLegibility;
+}
+
+
+
+html, body{
+  overflow-x: hidden;
+  width:100vw;
+
+}
+
+main {
+  padding-top: 3em;
+}
+
+.back {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  margin-top: 4em;
+  width: 50px;
+  height: 50px;
+  background-color: #323232;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s background-color;
+
+  &:hover {
+    background-color: rgb(43, 43, 43);
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  .article-text p {
+    text-align: justify;
+    margin-right: 2em;
+    margin-left: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 1070px){
+  .img-art-2 img {
+    display: none;
+  }
+
+  .article .article-text .img-text {
+    position: unset;
+    margin-left: unset;
+    max-width: unset;
+  }
+
+  .article .article-text p {
+    margin-bottom: 2em;
+  }
+}
+

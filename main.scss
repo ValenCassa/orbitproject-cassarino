@@ -1,7 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-$primary-color:#2D2D2D; 
 @import './components/navbar';
 @import './components/scroll';
+
+$primary-color:#2D2D2D; 
+
+$font-weigths: ('light': 300,'regular': 400, 'medium': 500, 'semibold':600,'bold': 700);
+
+
+@mixin center_margin {
+  margin: 0 auto;
+}
+
+@mixin format($color ,$size) {
+  color: $color;
+  font-family: 'Poppins', sans-serif;
+  font-size: $size;
+}
 
 * {
   margin: 0;
@@ -28,10 +42,6 @@ body {
 }
 
 
-
-
-
-
 .logo  {
   display: flex;
   
@@ -39,7 +49,7 @@ body {
   p {
     margin: 0.3em 0 0 0.2em;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: map-get($map: $font-weigths, $key: bold);
   }
  }
 
@@ -72,12 +82,12 @@ body {
       z-index: 0;
       top: 10em;
       .elipse {
+        @include center_margin;
         position: absolute;
         width: 304px;
         height: 304px;
         border-radius: 192px;
         background: #202020;
-        margin: 0 auto;
         transform: translateX(-20%);
 
 
@@ -93,7 +103,7 @@ body {
       }
 
       .dot {
-        margin: 0 auto;
+        @include center_margin;
         left: 0.1em;
         top: 46.5%;
         position: relative;
@@ -121,7 +131,7 @@ body {
           font-size: 50px;
           line-height: 63px;
           letter-spacing: 0.11em;
-          font-weight: 400;
+          font-weight: map-get($map: $font-weigths, $key: regular);
           color: #FFFFFF;
         }
 
@@ -137,7 +147,7 @@ body {
         &__orbit {
           
           font-size: 70px;
-          font-weight: 500;
+          font-weight: map-get($map: $font-weigths, $key: medium);
           line-height: 105px;
           letter-spacing: 0.11em;
           color: #FFD69C;
@@ -146,7 +156,7 @@ body {
         &__lorem {
           color: white;
           margin-top: 6em;
-          font-weight: 300;
+          font-weight: map-get($map: $font-weigths, $key: light);
           font-size: 18px;
           line-height: 125.5%;
           letter-spacing: 0.06em;
@@ -182,7 +192,7 @@ body {
         }
         &__text {
           margin-top: 1.2em;
-          font-weight: 500;
+          font-weight: map-get($map: $font-weigths, $key: medium);
           font-size: 20px;
           line-height: 125.5%;       
           letter-spacing: 0.06em;
@@ -243,11 +253,10 @@ body {
     height: 100%;
     text-align: center;
     .cities {
-      
+      @include format(#ffff, 30px);
       font-family: 'Poppins', sans-serif;
-      font-size: 30px;
-      font-weight: 500;
-      color: white !important;
+      font-weight: map-get($map: $font-weigths, $key: medium);
+      
     }
 
     .vector {
@@ -273,7 +282,7 @@ body {
 
     .card-title {
       color: white;
-      font-weight: 600;
+      font-weight: map-get($map: $font-weigths, $key: semibold);
     }
 
     .card-text {
@@ -292,10 +301,9 @@ body {
     margin: 2em 8em 2em 8em;
   }
   &__sobre-nosotros {
-    color: white !important;
+    @include format(white, 30px);
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 30px;
+    font-weight: map-get($map: $font-weigths, $key: medium);
     text-align: center;
   }
 
@@ -347,7 +355,7 @@ body {
     left: 0;
     padding: 30px;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: map-get($map: $font-weigths, $key: bold);
     color: rgb(0, 0, 0);
   }
 
@@ -415,18 +423,16 @@ body {
 .contact {
 
   .card {
+    @include center_margin;
     border: none;
-    margin: 0 auto;
     background-color: $primary-color;
     margin-bottom: 4em;
 
 
     .contact-text {
+      @include format(white, 33px);
       letter-spacing: 0.04em;
-      color: white;
-      font-family: 'Poppins', sans-serif;
-      font-size: 33px;
-      font-weight: 600;
+      font-weight: map-get($map: $font-weigths, $key: semibold);
     }
 
     .vector-3 {

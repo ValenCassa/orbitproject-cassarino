@@ -285,7 +285,7 @@ body {
 .logo p {
   margin: 0.3em 0 0 0.2em;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .hero-section {
@@ -329,12 +329,12 @@ body {
 }
 
 .hero-section .flex-left .elipse-text-container .elipse {
+  margin: 0 auto;
   position: absolute;
   width: 304px;
   height: 304px;
   border-radius: 192px;
   background: #202020;
-  margin: 0 auto;
   -webkit-transform: translateX(-20%);
           transform: translateX(-20%);
 }
@@ -499,10 +499,11 @@ body {
 }
 
 .cards-section .text .cities {
+  color: #ffff;
   font-family: 'Poppins', sans-serif;
   font-size: 30px;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  color: white !important;
 }
 
 .cards-section .text .vector {
@@ -540,10 +541,11 @@ body {
 }
 
 .about-us__sobre-nosotros {
-  color: white !important;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: 30px;
   text-align: center;
 }
 
@@ -601,7 +603,7 @@ body {
   left: 0;
   padding: 30px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   color: black;
 }
 
@@ -663,17 +665,17 @@ body {
 }
 
 .contact .card {
-  border: none;
   margin: 0 auto;
+  border: none;
   background-color: #2D2D2D;
   margin-bottom: 4em;
 }
 
 .contact .card .contact-text {
-  letter-spacing: 0.04em;
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 33px;
+  letter-spacing: 0.04em;
   font-weight: 600;
 }
 

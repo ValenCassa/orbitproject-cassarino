@@ -296,7 +296,7 @@ body {
 }
 
 .hero-section .flex-left {
-  height: 100vh;
+  height: 100%;
   -webkit-box-flex: 42%;
       -ms-flex: 42%;
           flex: 42%;
@@ -408,10 +408,10 @@ body {
 }
 
 .hero-section .flex-left .rectangle-container-left {
-  position: absolute;
+  position: relative;
   left: 0;
-  width: 42%;
-  height: 100vh;
+  width: 100%;
+  height: 50vh;
 }
 
 .hero-section .flex-left .rectangle-container-left .rectangle {
@@ -894,6 +894,12 @@ footer .logo-footer {
 @media only screen and (max-height: 740px) {
   .hero-section .flex-left .text-hero .text__lorem {
     margin-top: 3em;
+  }
+}
+
+@media only screen and (max-height: 670px) {
+  .cards-section {
+    min-height: 100vh;
   }
 }
 /*# sourceMappingURL=main.css.map */

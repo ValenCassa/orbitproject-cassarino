@@ -58,7 +58,8 @@ body {
   margin-bottom: 4em;
 
   .flex-left {
-    height: 100vh;
+    
+    height: 100%;
     flex: 42%;
     background-color: #282828;
 
@@ -166,10 +167,10 @@ body {
     }
 
     .rectangle-container-left {
-      position: absolute;
+      position: relative;
       left: 0;
-      width: 42%;
-      height: 100vh;
+      width: 100%;
+      height: 50vh;
       .rectangle {
         position: absolute;
         bottom: 0;
@@ -215,6 +216,7 @@ body {
 
   .flex-right {
     flex: 58%;
+    
     .bg-img {
       width: 100%;
       height: 100%;
@@ -649,5 +651,12 @@ footer {
   .hero-section .flex-left .text-hero .text__lorem {
     margin-top: 3em;
     
+  }
+}
+
+
+@media only screen and (max-height: 670px) {
+  .cards-section {
+    min-height: 100vh;
   }
 }

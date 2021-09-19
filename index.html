@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Orbit | Find your place</title>
   <link rel="icon" href="./img/logo.png">
   <meta name="description" content="We are Orbit, born to help you find your place. Come and discover what city is made for you.">
@@ -165,7 +166,7 @@
 
   <section class="cards-section" id="cities">
     <div class="text-section">
-      <div class="text">
+      <div class="text" data-aos="fade-down" data-aos-duration="700">
         <p class="cities">Popular cities</p>
         <div class="vector"><svg width="174" height="15" viewBox="0 0 174 15" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1 13V13C51.5784 2.39413 103.468 -0.514346 154.915 4.37292L173 6.09091" stroke="#EFCA94" stroke-width="4"/>
@@ -176,7 +177,7 @@
 
 
     <div class="container">
-      <div class="row">
+      <div class="row" data-aos="zoom-out-down" data-aos-duration="700">
         <div class="col-sm">
           <div class="card">
             <img src="./img/new-york.png" class="card-img-top" alt="new york">
@@ -213,7 +214,7 @@
         
       </div>
 
-      <div class="row second">
+      <div class="row second" data-aos="zoom-out-up" data-aos-duration="700">
         <div class="col-sm">
           <div class="card">
             <img src="./img/city1.png" class="card-img-top" alt="London">
@@ -255,7 +256,7 @@
   </section>
 
   <section class="about-us" id="about-us">
-    <div class="about-us__text about-text">
+    <div class="about-us__text about-text" data-aos="fade-down" data-aos-duration="700">
       <p class="about-us__sobre-nosotros about-txt">About us</p>
       <div class="vector-2"><svg width="174" height="15" viewBox="0 0 174 15" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 13V13C51.5784 2.39413 103.468 -0.514346 154.915 4.37292L173 6.09091" stroke="#EFCA94" stroke-width="4"/>
@@ -305,7 +306,7 @@
     
   </section>
 
-  <section class="contact" id="contact">
+  <section class="contact" id="contact" data-aos="fade-down" data-aos-duration="700">
 
     <form action="https://formspree.io/f/xdoylgvq" method="POST">
       <div class="container">
@@ -372,5 +373,9 @@
   </footer>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
